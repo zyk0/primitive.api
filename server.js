@@ -1,14 +1,12 @@
 var express = require('express');
-
- 
 var app = express();
  
 app.get('/prostokvashino', function(req, res) {
 	var json_string = {"person":[
-			{"name":"uncleFedor", "character":"boy"},
-            {"name":"Matroskin", "character":"cat"},            
-            {"name":"Sharick", "character":"dog"},
-            {"name":"Pechkin", "character":"postman"}
+		{"name":"uncleFedor", "character":"boy"},
+       		{"name":"Matroskin", "character":"cat"},            
+            	{"name":"Sharick", "character":"dog"},
+           	{"name":"Pechkin", "character":"postman"}
 			]};
   res.json(json_string);
 })
