@@ -1,8 +1,7 @@
-var express = require('express')
-var mongoose = require('mongoose');
+var express = require('express');
 
  
-var app = express()
+var app = express();
  
 app.get('/prostokvashino', function(req, res) {
 	var json_string = {"person":[
@@ -11,7 +10,7 @@ app.get('/prostokvashino', function(req, res) {
             {"name":"Sharick", "character":"dog"},
             {"name":"Pechkin", "character":"postman"}
 			]};
-  res.json(json_string)
+  res.json(json_string);
 })
  
 app.listen(3000);
